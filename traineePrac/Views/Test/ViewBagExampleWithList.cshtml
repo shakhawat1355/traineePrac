@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "ViewBagExampleWithList";
+}
+
+<h3>items in list:</h3>
+
+@foreach (var item in ViewBag.NamesList)
+{
+    <p>@item</p>
+}
