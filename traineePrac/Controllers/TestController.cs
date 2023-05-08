@@ -41,5 +41,13 @@ namespace traineePrac.Controllers
             return View();
 
         }
+
+        public IActionResult TempDataExampleWithObjects()
+        {
+            var obj = new { name = " abc", age = 40 };
+            TempData["object"] = obj;
+            return View();
+
+        }
     }
 }
