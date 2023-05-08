@@ -33,5 +33,13 @@ namespace traineePrac.Controllers
             return View();
 
         }
+
+        public IActionResult ViewDataExampleWithObjects()
+        {
+            var obj = new { name = " abc", age = 40 };
+            ViewData["object"] = obj;
+            return View();
+
+        }
     }
 }
