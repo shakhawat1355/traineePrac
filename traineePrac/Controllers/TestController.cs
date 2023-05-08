@@ -49,5 +49,12 @@ namespace traineePrac.Controllers
             return View();
 
         }
+
+        public IActionResult PartialViewExample()
+        {
+
+            return View();
+
+        }
     }
 }
